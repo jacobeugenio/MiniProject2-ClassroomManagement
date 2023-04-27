@@ -14,7 +14,7 @@
 
 /* Dashboard CSS */
 body {
-    background-color: #FFF3E2;
+    background-color: var(--primaryColor);
 }
 header, footer{
     background-color: var(--secondaryColor);
@@ -27,6 +27,10 @@ aside {
     position: relative;
     top: 70px;
 }
+
+aside .fa-angle-right {
+    transform: rotate(90deg);
+}
 aside > nav {
     width: 20%;
     height: 600px;
@@ -34,10 +38,12 @@ aside > nav {
     left: 0;
     border-right: 1px solid;
 }
-aside > nav > ul {
+aside > nav > ul, div > ul > li {
     list-style: none;
 }
-
+div > ul {
+    background-color: var(--primaryColor);
+}
 aside > nav > ul > li{
     border-bottom: 1px solid;
 }
@@ -47,10 +53,10 @@ section {
     top: 70px;
 }
 section  > main {
-    width: 75%;
     position: absolute;
     top: 0;
     right: 0;
+    width: 77%;
     border-left: 1px solid;
     box-sizing: border-box;
     padding: 20px;

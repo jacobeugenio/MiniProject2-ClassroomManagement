@@ -12,17 +12,17 @@ $(document).ready(function () {
 
 // Users table data starts here
 
-buildTable = (people) => {
+buildTable = (student) => {
     let table = document.getElementById('usersData');
 
-    for (i in people) {
+    for (i in student) {
 
         let row = `<tr>
-                        <td>${people[i].id}</td>
-                        <td>${people[i].firstName}</td>
-                        <td>${people[i].lastName}</td>
-                        <td>${people[i].gender}</td>
-                        <td>${people[i].age}</td>
+                        <td>${student[i].id}</td>
+                        <td>${student[i].firstName}</td>
+                        <td>${student[i].lastName}</td>
+                        <td>${student[i].gender}</td>
+                        <td>${student[i].age}</td>
                     </tr>`;
         table.innerHTML += row;
     }
@@ -38,5 +38,4 @@ getUser = teachers.map(teacher => teacher.id == 3 ? teacher.firstName : '');
 console.log(getUser)
 
 document.getElementById("user_id").textContent = getUser;
-
 
