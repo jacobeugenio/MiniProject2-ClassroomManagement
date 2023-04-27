@@ -15,6 +15,8 @@
 /* Dashboard CSS */
 body {
     background-color: var(--primaryColor);
+    font-family: serif;
+    letter-spacing: 1px;
 }
 header, footer{
     background-color: var(--secondaryColor);
@@ -44,8 +46,14 @@ aside > nav > ul, div > ul > li {
 div > ul {
     background-color: var(--primaryColor);
 }
+div > ul > li {
+    font-size: 14px;
+}
 aside > nav > ul > li{
     border-bottom: 1px solid;
+    text-transform: uppercase;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
 }
 
 section {
