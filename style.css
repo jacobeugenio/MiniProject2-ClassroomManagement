@@ -17,14 +17,15 @@ body {
     background-color: var(--primaryColor);
     font-family: serif;
     letter-spacing: 1px;
+    font-size: 14px;
 }
 header, footer{
     background-color: var(--secondaryColor);
     /* background-color: transparent; */
 }
-aside > nav, section > main{
+/* aside > nav {
     background-color: var(--secondaryColor);
-}
+} */
 aside {
     position: relative;
     top: 70px;
@@ -47,28 +48,30 @@ div > ul {
     background-color: var(--primaryColor);
 }
 div > ul > li {
-    font-size: 14px;
+    font-size: 13px;
 }
 aside > nav > ul > li{
     border-bottom: 1px solid;
     text-transform: uppercase;
     font-family: 'Source Serif Pro', serif;
     font-weight: 600;
+    font-size: 14px;
 }
-
-section {
-    position: relative;
-    top: 70px;
+.title, .message {
+    font-size: 16px;
+    text-transform: uppercase;
 }
-section  > main {
-    position: absolute;
-    top: 0;
-    right: 0;
+section.main-content {
+    width: 77%;
+    float: right;
+    margin-top: 70px;
+}
+/* section > main {
     width: 77%;
     border-left: 1px solid;
     box-sizing: border-box;
     padding: 20px;
-}
+} */
 
  /* SIR FERDIE CSS CODES STARTS HERE */
 
