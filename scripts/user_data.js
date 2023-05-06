@@ -18,7 +18,7 @@ export const students = [
 
         id: 2,
         firstName: "Ferdie",
-        lastName: "DelaCruz",
+        lastName: "Nodalo",
         gender: "M",
         age: "22"
 

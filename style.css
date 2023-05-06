@@ -4,6 +4,7 @@
     --secondaryColor : #FFE5CA;
     --navColor: #FA9884;
     --textColor: rgb(11, 10, 10);
+    --thirdColor: #F0F0F0;
 }
 
 *, *::before, *::after {
@@ -15,7 +16,7 @@
 
 /* Dashboard CSS */
 body {
-    background-color: var(--primaryColor);
+    background-color: var(--thirdColor);
     font-family: serif;
     letter-spacing: 1px;
     font-size: 14px;
@@ -31,6 +32,8 @@ header, footer{
 aside {
     position: relative;
     top: 70px;
+    background-color: var(--secondaryColor);
+    z-index: 5;
 }
 
 aside .fa-angle-right {

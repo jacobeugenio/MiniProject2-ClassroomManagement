@@ -43,82 +43,92 @@
     </header>
 
     <aside class="d-none d-md-block">
+      
         <nav>
             <ul class="p-0">
                 <li class="title p-md-3">KodeVamp's Classroom</li>
-                <li class="active"><i class="fa fa-home p-md-3 "></i>Home</li>
-
-                <li class="list" data-bs-toggle="collapse" href="#student-submenu" role="button" aria-expanded="false"
-                    aria-controls="student-submenu"><i class="fa fa-user p-md-3"></i>Students<i
-                        class="fa fa-angle-right float-end mx-2 mt-1 mt-md-3"></i>
-                    <div class="collapse" id="student-submenu">
-                        <ul class="pb-2 ps-5">
-                            <li><i class="fa fa-plus px-2  px-md-3"></i>Add New</li>
-                            <li><i class="fa fa-edit px-2  px-md-3"></i>Edit Student</li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="list" data-bs-toggle="collapse" href="#exams-submenu" role="button" aria-expanded="false"
-                    aria-controls="exams-submenu"><i class="fa fa-list-alt p-md-3"></i>Exams<i
-                        class="fa fa-angle-right float-end mx-2 mt-1 mt-md-3"></i>
-                    <div class="collapse" id="exams-submenu">
-                        <ul class="pb-2 ps-5">
-                            <li>
-                                <a href="./create_exam.html"><i class="fa fa-plus px-2  px-md-3"></i>Create New</a></li>
-                            <li><i class="fa fa-edit px-2  px-md-3"></i>All Exams</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="list" data-bs-toggle="collapse" href="#grades-submenu" role="button" aria-expanded="false"
-                    aria-controls="grades-submenu"><i class="fa  fa-th-list p-md-3"></i>Grades<i class="fa  
-                    fa-angle-right float-end mx-2 mt-1 mt-md-3"></i>
-                    <div class="collapse" id="grades-submenu">
-                        <ul class="pb-2 ps-5">
-                            <li><i class="fa fa-user px-2  px-md-3"></i>View</li>
-                            <li><i class="fa fa-user px-2  px-md-3"></i>Edit</li>
-                        </ul>
-                    </div>
-                </li>
-                <li data-bs-toggle="collapse" href="#attendance-submenu" role="button" aria-expanded="false"
-                    aria-controls="attendance-submenu"><i class="fa fa-table p-md-3"></i>Attendance<i
-                        class="fa  fa-angle-right float-end mx-2 mt-1 mt-md-3"></i>
-                    <div class="collapse" id="attendance-submenu">
-                        <ul class="pb-2 ps-5">
-                            <li><i class="fa fa-user px-2  px-md-3"></i>View</li>
-                            <li><i class="fa fa-user px-2  px-md-3"></i>Edit</li>
-                        </ul>
-                    </div>
-                </li>
+                <li class="active"><a href="#"><i class="fa fa-home p-md-3 "></i>Home</a></li>
+                <li class=""><a href="./profile.html"><i class="fa fa-home p-md-3 "></i>Profile</a></li>
+                <li class=""><a href="./students.html"><i class="fa fa-home p-md-3 "></i>Students</a></li>
+                <li class=""><a href="./grades.html"><i class="fa fa-home p-md-3 "></i>Grades</a></li>
+                <li class=""><a href="./attendance.html"><i class="fa fa-home p-md-3 "></i>Attendance</a></li>
         </nav>
     </aside>
    
     <section class="main-content">
-        
-        <section id="description">
-            <h5 class="">Students Data</h5><a href="create_exam.html">Create New</a>
-            <hr>
+
+        <section class="me-5 my-3">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-sm-0">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h1 class="card-title">1</h1>
+                      <p class="h5 card-text">Teacher</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h1 class="card-title">15</h1>
+                      <p class="h5 card-text">Students</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <h1 class="card-title">20</h1>
+                        <p class="h5 card-text">Exams</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
         </section>
-        <!-- <main class="">
+        
+        <section class="me-5 my-3">
 
-            <div class="container-fluid"> -->
-                <table id="usersTable" class="display table table-striped table-hover" style="width:98%">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Age</th>
-                            <th>Gender</th>
-                        </tr>
-                    </thead>
-                    <tbody id="usersData">
-                        <!-- JavaScript Users Data here -->
-                    </tbody>
-                </table>
-            <!-- </div>
+        <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                    <table id="usersTable" class="display table table-striped table-hover" style="width:98%">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                            </tr>
+                        </thead>
+                        <tbody id="usersData">
+                            <!-- JavaScript Users Data here -->
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+            </div>
 
-        </main> -->
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+
+
+
+
+            
+
     </section>
 
     <footer>
@@ -140,3 +150,35 @@
 </body>
 
 </html>
+
+
+                <!-- <li class="list" data-bs-toggle="collapse" href="#students-submenu" role="button"
+                    aria-expanded="false" aria-controls="students-submenu"><i
+                        class="fa fa-list-alt p-md-3"></i>Students<i
+                        class="fa fa-angle-right float-end mx-2 mt-1 mt-md-3"></i></li>
+                <div class="collapse" id="students-submenu">
+                    <ul class="pb-2 ps-5">
+                        <li><a href="./home.html"><i class="fa fa-plus px-2  px-md-3"></i>Create New</a></li>
+                        <li><i class="fa fa-edit px-2  px-md-3"></i>All Exams</li>
+                    </ul>
+                </div> -->
+
+                <!-- <li class="list" data-bs-toggle="collapse" href="#exams-submenu" role="button"
+                    aria-expanded="false" aria-controls="exams-submenu"><i class="fa fa-list-alt p-md-3"></i>Exams<i
+                        class="fa fa-angle-right float-end mx-2 mt-1 mt-md-3"></i></li>
+                <div class="collapse" id="exams-submenu">
+                    <ul class="pb-2 ps-5">
+                        <li><a href="./home.html"><i class="fa fa-plus px-2  px-md-3"></i>Create New</a></li>
+                        <li><i class="fa fa-edit px-2  px-md-3"></i>All Exams</li>
+                    </ul>
+                </div> -->
+
+                <!-- <li data-bs-toggle="collapse" href="#attendance-submenu" role="button" aria-expanded="false"
+                    aria-controls="attendance-submenu"><i class="fa fa-table p-md-3"></i>Attendance<i
+                        class="fa  fa-angle-right float-end mx-2 mt-1 mt-md-3"></i> </li>
+                <div class="collapse" id="attendance-submenu">
+                    <ul class="pb-2 ps-5">
+                        <li><i class="fa fa-user px-2  px-md-3"></i>View</li>
+                        <li><i class="fa fa-user px-2  px-md-3"></i>Edit</li>
+                    </ul>
+                </div> -->
