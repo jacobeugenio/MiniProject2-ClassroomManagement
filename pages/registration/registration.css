@@ -15,9 +15,11 @@
 }
 
 .input-form {
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .register-button {
   position: relative;
-  left: 190px;
+  left: 230px;
 }
