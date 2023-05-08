@@ -58,22 +58,23 @@
                 <li class="active"><a href="./#"><i class="fa fa-home p-md-3 "></i>Students</a></li>
                 <li class=""><a href="./grades.html"><i class="fa fa-home p-md-3 "></i>Grades</a></li>
                 <li class=""><a href="./attendance.html"><i class="fa fa-home p-md-3 "></i>Attendance</a></li>
+                <li class=""><a href="./exams.html"><i class="fa fa-home p-md-3 "></i>Exams</a></li>
         </nav>
     </aside>
 
     <section class="main-content">
         <div class="container mt-3 pe-5">
-            <form class="row g-3">
+            <form class="row g-3" action="/" method="post" id="reg-student">
                 <div class="col-md-6">
                     <label for="validationServer01" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="validationServer01" value="" required>
+                    <input type="text" name="fname" class="form-control" id="validationServer01" value="">
                     <div class="valid-feedback d-none">
                         Looks good!
                     </div>
                 </div>
                 <div class="col-md-6">
                     <label for="validationServer02" class="form-label">Last name</label>
-                    <input type="text" class="form-control" id="validationServer02" value="" required>
+                    <input type="text" name="lname" class="form-control" id="validationServer02" value="">
                     <div class="valid-feedback d-none">
                         Looks good!
                     </div>
@@ -83,7 +84,7 @@
                     <div class="input-group has-validation">
                         <span class="input-group-text" id="inputGroupPrepend3">@</span>
                         <input type="text" class="form-control" id="validationServerUsername"
-                            aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                            aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback">
                         <div id="validationServerUsernameFeedback" class="invalid-feedback d-none">
                             Please choose a username.
                         </div>
@@ -93,7 +94,7 @@
                     <label for="validationServerUsername" class="form-label">Contact No.</label>
                     <div class="input-group has-validation">
                         <input type="text" class="form-control" id="validationServerUsername"
-                            aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                            aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback">
                         <div id="validationServerUsernameFeedback" class="invalid-feedback d-none">
                             Please choose a username.
                         </div>
@@ -102,7 +103,7 @@
                 <div class="col-md-3">
                     <label for="validationServer03" class="form-label">Age</label>
                     <input type="text" class="form-control" id="validationServer03"
-                        aria-describedby="validationServer03Feedback" required>
+                        aria-describedby="validationServer03Feedback">
                     <div id="validationServer03Feedback" class="invalid-feedback d-none">
                         Please provide a valid city.
                     </div>
@@ -110,7 +111,7 @@
                 <div class="col-md-3">
                     <label for="validationServer04" class="form-label">Gender</label>
                     <select class="form-select" id="validationServer04"
-                        aria-describedby="validationServer04Feedback" required>
+                        aria-describedby="validationServer04Feedback">
                         <option selected disabled value="">Choose...</option>
                         <option>...</option>
                     </select>
@@ -121,7 +122,7 @@
                 <div class="col-md-6">
                     <label for="validationServer04" class="form-label">Municipality</label>
                     <select class="form-select" id="validationServer04"
-                        aria-describedby="validationServer04Feedback" required>
+                        aria-describedby="validationServer04Feedback">
                         <option selected disabled value="">Choose...</option>
                         <option>...</option>
                     </select>
@@ -132,7 +133,7 @@
                 <div class="col-md-6">
                     <label for="validationServer04" class="form-label">Barangay</label>
                     <select class="form-select" id="validationServer04"
-                        aria-describedby="validationServer04Feedback" required>
+                        aria-describedby="validationServer04Feedback">
                         <option selected disabled value="">Choose...</option>
                         <option>...</option>
                     </select>
@@ -143,7 +144,7 @@
                 <div class="col-md-6">
                     <label for="validationServer04" class="form-label">Sitio</label>
                     <select class="form-select" id="validationServer04"
-                        aria-describedby="validationServer04Feedback" required>
+                        aria-describedby="validationServer04Feedback">
                         <option selected disabled value="">Choose...</option>
                         <option>...</option>
                     </select>
@@ -173,6 +174,29 @@
 
     <!-- Custom Script -->
     <script src="/scripts/main.js" type="module"></script>
+
+    <script>
+// console.log(fetch('/',{
+
+// }));
+        const form = document.querySelector("#reg-student");
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData)
+           console.log(data);
+     
+           fetch('http://localhost:3000/products/add-product', {
+            method: "POST",
+            headers: {
+                'Content-Type': "application/json"
+            },
+            body: JSON.stringify(data)
+           })
+        })
+        // console.log(fetch('http://localhost:3000/'));
+    </script>
 
 </body>
 

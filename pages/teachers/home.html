@@ -52,6 +52,7 @@
                 <li class=""><a href="./students.html"><i class="fa fa-home p-md-3 "></i>Students</a></li>
                 <li class=""><a href="./grades.html"><i class="fa fa-home p-md-3 "></i>Grades</a></li>
                 <li class=""><a href="./attendance.html"><i class="fa fa-home p-md-3 "></i>Attendance</a></li>
+                <li class=""><a href="./exams.html"><i class="fa fa-home p-md-3 "></i>Exams</a></li>
         </nav>
     </aside>
    
@@ -70,7 +71,7 @@
                 <div class="col-md-4">
                   <div class="card">
                     <div class="card-body text-center">
-                      <h1 class="card-title">15</h1>
+                      <h1 class="card-title" id="students-list">15</h1>
                       <p class="h5 card-text">Students</p>
                     </div>
                   </div>
@@ -86,10 +87,12 @@
               </div>
         </section>
         
-        <section class="me-5 my-3">
-
+        <section class="me-5 my-5">
+         
         <div class="row">
             <div class="col-sm-6 mb-3 mb-sm-0">
+                
+            <h5>Students</h5>
               <div class="card">
                 <div class="card-body">
                     <table id="usersTable" class="display table table-striped table-hover" style="width:98%">
@@ -109,8 +112,9 @@
                 </div>
               </div>
             </div>
-
+            
             <div class="col-sm-6">
+                <h5>Exams</h5>
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Special title treatment</h5>
@@ -146,6 +150,15 @@
 
     <!-- Custom Script -->
     <script src="/scripts/main.js" type="module"></script>
+
+    <script>
+      fetch('http://localhost:3000/teachers/get-students')
+      .then(res => res.json())
+      .then(data => {
+        // console.log(data[0].fname)
+        document.querySelector("#students-list").textContent = data.length;
+      });
+    </script>
 
 </body>
 
