@@ -1,17 +1,4 @@
-import { buildTable, studentCounter } from './functions.js';
-import { Student, Teacher } from './constructor.js';
-import { students, teachers } from './user_data.js';
 
-const student3 = new Student(studentCounter(), "Jacob", "Eugenio", "M", 32);
-students.push(student3);
-
-
-const getUser = teachers.map(teacher => teacher.id == 3 ? teacher.firstName : '');
-console.log(getUser);
-
-document.getElementById("user_id").textContent = getUser;
-
-buildTable(students);
 
 // SIR FERDIE JS CODES STARTS HERE
 
