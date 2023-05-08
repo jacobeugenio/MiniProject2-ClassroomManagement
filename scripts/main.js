@@ -10,6 +10,7 @@ const getUser = teachers.map(teacher => teacher.id == 3 ? teacher.firstName : ''
 console.log(getUser);
 
 document.getElementById("user_id").textContent = getUser;
+
 buildTable(students);
 
 // SIR FERDIE JS CODES STARTS HERE

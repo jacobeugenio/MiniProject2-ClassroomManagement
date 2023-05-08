@@ -16,7 +16,9 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Rubik:wght@500&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Rubik:wght@500&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
@@ -46,99 +48,52 @@
         <nav>
             <ul class="p-0">
                 <li class="title p-md-3">KodeVamp's Classroom</li>
-                <li class="">
-                <a href="./home.html"><i class="fa fa-home p-md-3 "></i>Home</a>
-                </li>
+                <li class=""><a href="./home.html"><i class="fa fa-home p-md-3 "></i>Home</a></li>
+                <li class="list" data-bs-toggle="collapse" href="#students-submenu" role="button"
+                    aria-expanded="false" aria-controls="students-submenu"><i
+                        class="fa fa-list-alt p-md-3"></i>Students<i
+                        class="fa fa-angle-right float-end mx-2 mt-1 mt-md-3"></i></li>
+                <div class="collapse" id="students-submenu">
+                    <ul class="pb-2 ps-5">
+                        <li><a href="./home.html"><i class="fa fa-plus px-2  px-md-3"></i>Create New</a></li>
+                        <li><i class="fa fa-edit px-2  px-md-3"></i>All Exams</li>
+                    </ul>
+                </div>
 
-                <li class="list" data-bs-toggle="collapse" href="#student-submenu" role="button" aria-expanded="false"
-                    aria-controls="student-submenu"><i class="fa fa-user p-md-3"></i>Students<i
-                        class="fa fa-angle-right float-end mx-2 mt-1 mt-md-3"></i>
-                    <div class="collapse" id="student-submenu">
-                        <ul class="pb-2 ps-5">
-                            <li><i class="fa fa-plus px-2  px-md-3"></i>Add New</li>
-                            <li><i class="fa fa-edit px-2  px-md-3"></i>Edit Student</li>
-                        </ul>
-                    </div>
-                </li>
+                <li class="list" data-bs-toggle="collapse" href="#exams-submenu" role="button"
+                    aria-expanded="false" aria-controls="exams-submenu"><i class="fa fa-list-alt p-md-3"></i>Exams<i
+                        class="fa fa-angle-right float-end mx-2 mt-1 mt-md-3"></i></li>
+                <div class="collapse" id="exams-submenu">
+                    <ul class="pb-2 ps-5">
+                        <li><a href="./home.html"><i class="fa fa-plus px-2  px-md-3"></i>Create New</a></li>
+                        <li><i class="fa fa-edit px-2  px-md-3"></i>All Exams</li>
+                    </ul>
+                </div>
 
-                <li class="list active" data-bs-toggle="collapse" href="#exams-submenu" role="button" aria-expanded="false"
-                    aria-controls="exams-submenu"><i class="fa fa-list-alt p-md-3"></i>Exams<i
-                        class="fa fa-angle-right float-end mx-2 mt-1 mt-md-3"></i>
-                    <div class="collapse" id="exams-submenu">
-                        <ul class="pb-2 ps-5">
-                            <li><i class="fa fa-plus px-2  px-md-3"></i>Create New</li>
-                            <li><i class="fa fa-edit px-2  px-md-3"></i>All Exams</li>
-                        </ul>
-                    </div>
-                </li>
                 <li class="list" data-bs-toggle="collapse" href="#grades-submenu" role="button" aria-expanded="false"
                     aria-controls="grades-submenu"><i class="fa  fa-th-list p-md-3"></i>Grades<i class="fa  
-                    fa-angle-right float-end mx-2 mt-1 mt-md-3"></i>
-                    <div class="collapse" id="grades-submenu">
-                        <ul class="pb-2 ps-5">
-                            <li><i class="fa fa-user px-2  px-md-3"></i>View</li>
-                            <li><i class="fa fa-user px-2  px-md-3"></i>Edit</li>
-                        </ul>
-                    </div>
-                </li>
+                    fa-angle-right float-end mx-2 mt-1 mt-md-3"></i></li>
+                <div class="collapse" id="grades-submenu">
+                    <ul class="pb-2 ps-5">
+                        <li><a href="./home.html"> <i class="fa fa-user px-2  px-md-3"></i>View</a></li>
+                        <li><i class="fa fa-user px-2  px-md-3"></i>Edit</li>
+                    </ul>
+                </div>
+
                 <li data-bs-toggle="collapse" href="#attendance-submenu" role="button" aria-expanded="false"
                     aria-controls="attendance-submenu"><i class="fa fa-table p-md-3"></i>Attendance<i
-                        class="fa  fa-angle-right float-end mx-2 mt-1 mt-md-3"></i>
-                    <div class="collapse" id="attendance-submenu">
-                        <ul class="pb-2 ps-5">
-                            <li><i class="fa fa-user px-2  px-md-3"></i>View</li>
-                            <li><i class="fa fa-user px-2  px-md-3"></i>Edit</li>
-                        </ul>
-                    </div>
-                </li>
+                        class="fa  fa-angle-right float-end mx-2 mt-1 mt-md-3"></i> </li>
+                <div class="collapse" id="attendance-submenu">
+                    <ul class="pb-2 ps-5">
+                        <li><i class="fa fa-user px-2  px-md-3"></i>View</li>
+                        <li><i class="fa fa-user px-2  px-md-3"></i>Edit</li>
+                    </ul>
+                </div>
         </nav>
     </aside>
-   
+
     <section class="main-content">
 
-        <section class="create_exam_form">
-           
-            <form class="row g-3">
-                <!-- <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputPassword4" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress2" class="form-label">Address 2</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div> -->
-                <div class="col-md-6">
-                  <label for="inputCity" class="form-label">City</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="col-md-4">
-                  <label for="inputState" class="form-label">Subject</label>
-                  <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>Math</option>
-                    <option>English</option>
-                    <option>Science</option>
-                  </select>
-                </div>
-                <div class="col-md-2">
-                  <label for="inputZip" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary">Sign in</button>
-                </div>
-              </form>
-        </section>
-        
-    
     </section>
 
     <footer>
@@ -162,7 +117,7 @@
 </html>
 
 
-    <!-- <main>
+<!-- <main>
         <form action="">
             <label for="subjects">Choose Subject</label>
             <select name="subjects" id="subject-list">
