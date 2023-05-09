@@ -43,17 +43,17 @@
     </header>
 
     <aside class="d-none d-md-block">
-      
-        <nav>
-            <ul class="p-0">
-                <li class="title p-md-3">KodeVamp's Classroom</li>
-                <li class=""><a href="./home.html"><i class="fa fa-home p-md-3 "></i>Home</a></li>
-                <li class=""><a href="./profile.html"><i class="fa fa-home p-md-3 "></i>Profile</a></li>
-                <li class="active"><a href="./#"><i class="fa fa-home p-md-3 "></i>Students</a></li>
-                <li class=""><a href="./grades.html"><i class="fa fa-home p-md-3 "></i>Grades</a></li>
-                <li class=""><a href="./attendance.html"><i class="fa fa-home p-md-3 "></i>Attendance</a></li>
-                <li class=""><a href="./exams.html"><i class="fa fa-home p-md-3 "></i>Exams</a></li>
-        </nav>
+       
+    <nav>
+        <ul class="p-0">
+            <li class="title p-md-3">KodeVamp's Classroom</li>
+            <li class=""><a href="./home.html"><i class="fa fa-home p-md-3 "></i>Home</a></li>
+            <li class=""><a href="./profile.html"><i class="fa fa-user p-md-3 "></i>Profile</a></li>
+            <li class="active"><a href="#"><i class="fa fa-users p-md-3 "></i>Students</a></li>
+            <li class=""><a href="./grades.html"><i class="fa fa- fa-list-alt p-md-3 "></i>Grades</a></li>
+            <li class=""><a href="./attendance.html"><i class="fa fa-bars p-md-3 "></i>Attendance</a></li>
+            <li class=""><a href="./exams.html"><i class="fa fa-table p-md-3 "></i>Exams</a></li>
+    </nav>
     </aside>
    
     <section class="main-content">
@@ -63,14 +63,16 @@
             <hr>
         </section>
         <section  class="me-5 my-3">
-                <table id="usersTable" class="display table table-striped table-hover" style="width:98%">
+                <table id="usersTable" class="display table table-hover" style="width:98%">
                     <thead>
                         <tr>
                             <th>ID</th>
                             <th>First Name</th>
                             <th>Last Name</th>
-                            <th>Age</th>
+                            <th>Username</th>
                             <th>Gender</th>
+                            <th>Age</th>
+                            <th>Contact</th>
                         </tr>
                     </thead>
                     <tbody id="usersData">
@@ -106,8 +108,10 @@
         <td>${el.id}</td>
         <td>${el.fname}</td>
         <td>${el.lname}</td>
+        <td>${el.username}</td>
         <td>${el.gender}</td>
         <td>${el.age}</td>
+        <td>${el.contact}</td>
         `
               table.innerHTML += row;
             });
