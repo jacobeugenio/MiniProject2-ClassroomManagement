@@ -90,12 +90,31 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 
-    <!-- Datatable CDN loader/helper starts here -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script> -->
-
     <!-- Custom Script -->
-    <script src="/scripts/main.js" type="module"></script>
+    <script src="../../main.js" type="module"></script>
+    <script>
+        //Get Students
+        fetch('http://localhost:3000/teachers/get-students')
+          .then(res => res.json())
+          .then(student => {
+            // console.log(student[0].fname)
+            const table = document.querySelector("#usersTable");
+            //   document.querySelector("#students-list").textContent = student.length;
+            let row = document.querySelector("#users");
+            student.forEach(el => {
+              row = `
+        <td>${el.id}</td>
+        <td>${el.fname}</td>
+        <td>${el.lname}</td>
+        <td>${el.gender}</td>
+        <td>${el.age}</td>
+        `
+              table.innerHTML += row;
+            });
+    
+    
+          });
+      </script>
 
 </body>
 

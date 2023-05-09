@@ -46,92 +46,87 @@
 
   </header>
 
-    <aside class="d-none d-md-block">
-      
-        <nav>
-            <ul class="p-0">
-                <li class="title p-md-3">KodeVamp's Classroom</li>
-                <li class="active"><a href="#"><i class="fa fa-home p-md-3 "></i>Home</a></li>
-                <li class=""><a href="./profile.html"><i class="fa fa-home p-md-3 "></i>Profile</a></li>
-                <li class=""><a href="./students.html"><i class="fa fa-home p-md-3 "></i>Students</a></li>
-                <li class=""><a href="./grades.html"><i class="fa fa-home p-md-3 "></i>Grades</a></li>
-                <li class=""><a href="./attendance.html"><i class="fa fa-home p-md-3 "></i>Attendance</a></li>
-        </nav>
-    </aside>
-   
-    <section class="main-content">
+  <aside class="d-none d-md-block">
 
-        <section class="me-5 my-3">
-            <div class="row">
-                <div class="col-md-4 mb-3 mb-sm-0">
-                  <div class="card">
-                    <div class="card-body text-center">
-                      <h1 class="card-title">1</h1>
-                      <p class="h5 card-text">Teacher</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <div class="card-body text-center">
-                      <h1 class="card-title">15</h1>
-                      <p class="h5 card-text">Students</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <h1 class="card-title">20</h1>
-                        <p class="h5 card-text">Exams</p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-        </section>
-        
-        <section class="me-5 my-3">
+    <nav>
+      <ul class="p-0">
+        <li class="title p-md-3">KodeVamp's Classroom</li>
+        <li class="active"><a href="#"><i class="fa fa-home p-md-3 "></i>Home</a></li>
+        <li class=""><a href="./profile.html"><i class="fa fa-home p-md-3 "></i>Profile</a></li>
+        <li class=""><a href="./students.html"><i class="fa fa-home p-md-3 "></i>Students</a></li>
+        <li class=""><a href="./grades.html"><i class="fa fa-home p-md-3 "></i>Grades</a></li>
+        <li class=""><a href="./attendance.html"><i class="fa fa-home p-md-3 "></i>Attendance</a></li>
+    </nav>
+  </aside>
 
-        <div class="row">
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card">
-                <div class="card-body">
-                    <table id="usersTable" class="display table table-striped table-hover" style="width:98%">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Age</th>
-                                <th>Gender</th>
-                            </tr>
-                        </thead>
-                        <tbody id="usersData">
-                            <!-- JavaScript Users Data here -->
-                        </tbody>
-                    </table>
-                </div>
-              </div>
-            </div>
+  <section class="main-content">
 
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+    <section class="me-5 my-3">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body text-center">
+              <h1 class="card-title">1</h1>
+              <p class="h5 card-text">Teacher</p>
             </div>
           </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h1 class="card-title" id="students-list">15</h1>
+              <p class="h5 card-text">Students</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h1 class="card-title">20</h1>
+              <p class="h5 card-text">Exams</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="me-5 my-3">
+
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <table id="usersTable" class="display table table-striped table-hover" style="width:98%">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                  </tr>
+                </thead>
+                <tbody id="usersData">
+                  <!-- JavaScript Users Data here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     </section>
-
-
-
-
-
 
   </section>
 
@@ -144,21 +139,32 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
 
-  <!-- Datatable CDN loader/helper starts here -->
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script> -->
-
   <!-- Custom Script -->
-  <script src="/scripts/main.js" type="module"></script>
+  <script src="../../main.js"></script>
 
-    <script>
-      fetch('http://localhost:3000/teachers/get-students')
+  <script>
+    //Get Students
+    fetch('http://localhost:3000/teachers/get-students')
       .then(res => res.json())
-      .then(data => {
-        // console.log(data[0].fname)
-        document.querySelector("#students-list").textContent = data.length;
+      .then(student => {
+        // console.log(student[0].fname)
+        const table = document.querySelector("#usersTable");
+          document.querySelector("#students-list").textContent = student.length;
+        let row = document.querySelector("#users");
+        student.forEach(el => {
+          row = `
+    <td>${el.id}</td>
+    <td>${el.fname}</td>
+    <td>${el.lname}</td>
+    <td>${el.gender}</td>
+    <td>${el.age}</td>
+    `
+          table.innerHTML += row;
+        });
+
+
       });
-    </script>
+  </script>
 
 </body>
 
