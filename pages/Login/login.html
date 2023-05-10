@@ -13,17 +13,44 @@
     <div class="login-container">
         <div class="login-form">
             <h2>Login Form</h2>
-            <form>
+            <form method="post" id="loginForm">
                 <label for="username">Username:</label>
                 <input class="input-form" type="text" id="username" name="username" required><br><br>
                 <label for="password">Password:</label>
                 <input class="input-form" type="password" id="password" name="password" required><br><br>
-                <button class="login-button">Login</button>
+                <button class="login-button" type="submit">Login</button>
 
                 <small>Doesn't have an account? <a href="../registration/registration.html"> Register Here</a></small>
             </form>
         </div>
     </div>
+
+
+    <script>
+
+        const form = document.querySelector("#loginForm");
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+        
+            
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData)
+     
+           fetch('http://localhost:3000/students/login', {
+            method: "POST",
+            headers: {
+                'Content-Type': "application/json"
+            },
+            body: JSON.stringify(data)
+           }).then(res => res.json())
+           .then(data => {
+            !data.status
+                ? document.write("user not found")
+                : window.location.href = "../students/home.html"
+           })
+        })
+     
+    </script>
 </body>
 
 </html>
