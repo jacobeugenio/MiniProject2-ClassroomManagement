@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
 }
-
+h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
 .register-container {
   /* border: 1px solid red; */
   display: flex;
@@ -22,10 +25,13 @@
 .input-form {
   box-sizing: border-box;
   width: 100%;
+  border-radius: 5px;
+  height: 25px;
 }
 
 .register-button {
-  position: relative;
-  left: 230px;
   padding: 5px;
+  width: 100%;
+  text-transform: uppercase;
+  border-radius: 3px;
 }

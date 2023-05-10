@@ -51,7 +51,13 @@ registerButton.addEventListener("click", function (event) {
       'Content-Type': "application/json"
     },
     body: JSON.stringify(formData)
-  })
+    })
+    .then(res => res.json())
+    .then(data => {
+      data.status
+        ? window.location.href = "../students/home.html"
+        : alert("Please fill out all fields")
+    })
 
   // log the form data to the console
   console.log(formData);
