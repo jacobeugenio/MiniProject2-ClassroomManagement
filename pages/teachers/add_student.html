@@ -55,7 +55,7 @@
                 <li class="title p-md-3">KodeVamp's Classroom</li>
                 <li class=""><a href="./home.html"><i class="fa fa-home p-md-3 "></i>Home</a></li>
                 <li class=""><a href="./profile.html"><i class="fa fa-user p-md-3 "></i>Profile</a></li>
-                <li class="active"><a href="./#"><i class="fa fa-users p-md-3 "></i>Students</a></li>
+                <li class="active"><a href="./students.html"><i class="fa fa-users p-md-3 "></i>Students</a></li>
                 <li class=""><a href="./grades.html"><i class="fa fa- fa-list-alt p-md-3 "></i>Grades</a></li>
                 <li class=""><a href="./attendance.html"><i class="fa fa-bars p-md-3 "></i>Attendance</a></li>
                 <li class=""><a href="./exams.html"><i class="fa fa-table p-md-3 "></i>Exams</a></li>
@@ -180,7 +180,7 @@
             
             const formData = new FormData(form);
             const data = Object.fromEntries(formData)
-           console.log(data);
+            console.log(data);
      
            fetch('http://localhost:3000/teachers/add-student', {
             method: "POST",
