@@ -45,7 +45,7 @@
            }).then(res => res.json())
            .then(data => {
             !data.status
-                ? document.write("user not found")
+                ? alert("User not found")
                 : window.location.href = "../students/home.html"
            })
         })
