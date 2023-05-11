@@ -25,20 +25,20 @@ registerButton.addEventListener("click", function (event) {
     password.trim() === "" ||
     confirmPassword.trim() === ""
   ) {
-    console.error("Please fill in all required fields");
+    alert("Please fill in all required fields");
     return;
   }
 
   // check if password and confirm password match
   if (password !== confirmPassword) {
-    console.error("Passwords do not match");
+    alert("Passwords do not match");
     return;
   }
 
   // create an object with the input values
   const formData = {
-    firstName: firstName,
-    lastName: lastName,
+    fname: firstName,
+    lname: lastName,
     gender: gender.value,
     age: age,
     username: username,
@@ -58,6 +58,9 @@ registerButton.addEventListener("click", function (event) {
         ? (window.location.href = "../students/home.html")
         : alert("Please fill out all fields");
     });
+
+  // reset the form
+  document.querySelector("form").reset();
 
   // log the form data to the console
   console.log(formData);
