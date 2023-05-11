@@ -37,27 +37,27 @@ registerButton.addEventListener("click", function (event) {
 
   // create an object with the input values
   const formData = {
-    fname: firstName,
-    lname: lastName,
+    firstName: firstName,
+    lastName: lastName,
     gender: gender.value,
     age: age,
     username: username,
-    password: password
+    password: password,
   };
 
-  fetch('http://localhost:3000/students/reg-student', {
+  fetch("http://localhost:3000/students/reg-student", {
     method: "POST",
     headers: {
-      'Content-Type': "application/json"
+      "Content-Type": "application/json",
     },
-    body: JSON.stringify(formData)
-    })
-    .then(res => res.json())
-    .then(data => {
+    body: JSON.stringify(formData),
+  })
+    .then((res) => res.json())
+    .then((data) => {
       data.status
-        ? window.location.href = "../students/home.html"
-        : alert("Please fill out all fields")
-    })
+        ? (window.location.href = "../students/home.html")
+        : alert("Please fill out all fields");
+    });
 
   // log the form data to the console
   console.log(formData);
